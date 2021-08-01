@@ -1,0 +1,30 @@
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 3px solid black;
+    width: 200px;
+    margin: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front {
+    backface-visibility: hidden;
+}
+
+.back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+img {
+    padding: 50px;
+}
